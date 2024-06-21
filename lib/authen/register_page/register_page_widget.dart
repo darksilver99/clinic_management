@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'register_page_model.dart';
 export 'register_page_model.dart';
 
@@ -69,7 +67,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
               wrapWithModel(
                 model: _model.mainBackgroundViewModel,
                 updateCallback: () => setState(() {}),
-                child: MainBackgroundViewWidget(),
+                child: const MainBackgroundViewWidget(),
               ),
               Column(
                 mainAxisSize: MainAxisSize.max,
@@ -77,7 +75,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -114,13 +112,13 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                               key: _model.formKey,
                               autovalidateMode: AutovalidateMode.disabled,
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: TextFormField(
                                         controller: _model.textController1,
@@ -203,7 +201,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: TextFormField(
                                         controller: _model.textController2,
@@ -286,7 +284,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: TextFormField(
                                         controller: _model.textController3,
@@ -369,7 +367,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: TextFormField(
                                         controller: _model.emailTextController,
@@ -452,7 +450,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: TextFormField(
                                         controller:
@@ -555,7 +553,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 16.0),
                                       child: TextFormField(
                                         controller: _model
@@ -658,7 +656,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -677,7 +675,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                                   .text) {
                                             ScaffoldMessenger.of(context)
                                                 .showSnackBar(
-                                              SnackBar(
+                                              const SnackBar(
                                                 content: Text(
                                                   'Passwords don\'t match!',
                                                 ),
@@ -719,10 +717,10 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                           width: double.infinity,
                                           height: 48.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .secondary,
@@ -735,7 +733,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                                     letterSpacing: 0.0,
                                                   ),
                                           elevation: 3.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),
@@ -752,10 +750,10 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 48.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             24.0, 0.0, 24.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .alternate,
@@ -769,7 +767,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                               letterSpacing: 0.0,
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),

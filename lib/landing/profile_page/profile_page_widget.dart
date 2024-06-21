@@ -4,9 +4,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'profile_page_model.dart';
 export 'profile_page_model.dart';
 
@@ -51,7 +48,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
               wrapWithModel(
                 model: _model.mainBackgroundViewModel,
                 updateCallback: () => setState(() {}),
-                child: MainBackgroundViewWidget(),
+                child: const MainBackgroundViewWidget(),
               ),
               Column(
                 mainAxisSize: MainAxisSize.max,
@@ -61,12 +58,12 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 32.0, 16.0, 16.0),
                           child: Material(
                             color: Colors.transparent,
                             elevation: 3.0,
-                            shape: RoundedRectangleBorder(
+                            shape: const RoundedRectangleBorder(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(16.0),
                                 bottomRight: Radius.circular(16.0),
@@ -79,7 +76,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(16.0),
                                   bottomRight: Radius.circular(16.0),
                                   topLeft: Radius.circular(16.0),
@@ -87,17 +84,17 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(16.0),
+                                padding: const EdgeInsets.all(16.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: AuthUserStreamWidget(
                                         builder: (context) => Text(
-                                          'Display name : ${currentUserDisplayName}',
+                                          'Display name : $currentUserDisplayName',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -108,10 +105,10 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: Text(
-                                        'Email : ${currentUserEmail}',
+                                        'Email : $currentUserEmail',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -121,11 +118,11 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 8.0),
                                       child: AuthUserStreamWidget(
                                         builder: (context) => Text(
-                                          'Phone : ${currentPhoneNumber}',
+                                          'Phone : $currentPhoneNumber',
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
@@ -142,27 +139,27 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              Function() _navigate = () {};
+                              Function() navigate = () {};
                               var confirmDialogResponse =
                                   await showDialog<bool>(
                                         context: context,
                                         builder: (alertDialogContext) {
                                           return AlertDialog(
-                                            title: Text('Logout?'),
+                                            title: const Text('Logout?'),
                                             actions: [
                                               TextButton(
                                                 onPressed: () => Navigator.pop(
                                                     alertDialogContext, false),
-                                                child: Text('Cancel'),
+                                                child: const Text('Cancel'),
                                               ),
                                               TextButton(
                                                 onPressed: () => Navigator.pop(
                                                     alertDialogContext, true),
-                                                child: Text('Confirm'),
+                                                child: const Text('Confirm'),
                                               ),
                                             ],
                                           );
@@ -174,21 +171,21 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                 await authManager.signOut();
                                 GoRouter.of(context).clearRedirectLocation();
 
-                                _navigate = () => context.goNamedAuth(
+                                navigate = () => context.goNamedAuth(
                                     'LoginPage', context.mounted);
                               } else {
                                 setState(() {});
                               }
 
-                              _navigate();
+                              navigate();
                             },
                             text: 'Logout',
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 40.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).error,
                               textStyle: FlutterFlowTheme.of(context)
@@ -199,7 +196,7 @@ class _ProfilePageWidgetState extends State<ProfilePageWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               elevation: 3.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),
