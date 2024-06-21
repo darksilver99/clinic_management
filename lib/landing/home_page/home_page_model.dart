@@ -14,17 +14,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class HomePageModel extends FlutterFlowModel<HomePageWidget> {
-  ///  Local state fields for this page.
-
-  List<double> duration = [200.0, 400.0, 600.0, 800.0];
-  void addToDuration(double item) => duration.add(item);
-  void removeFromDuration(double item) => duration.remove(item);
-  void removeAtIndexFromDuration(int index) => duration.removeAt(index);
-  void insertAtIndexInDuration(int index, double item) =>
-      duration.insert(index, item);
-  void updateDurationAtIndex(int index, Function(double) updateFn) =>
-      duration[index] = updateFn(duration[index]);
-
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
