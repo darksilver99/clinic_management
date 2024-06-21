@@ -2,9 +2,15 @@ import '/component/main_background_view/main_background_view_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -43,8 +49,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 24.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 24.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -62,8 +68,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 24.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 24.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -81,8 +87,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 24.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 24.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -100,8 +106,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: const Offset(0.0, 24.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 24.0),
+            end: Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -131,7 +137,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
               wrapWithModel(
                 model: _model.mainBackgroundViewModel,
                 updateCallback: () => setState(() {}),
-                child: const MainBackgroundViewWidget(),
+                child: MainBackgroundViewWidget(),
               ),
               Column(
                 mainAxisSize: MainAxisSize.max,
@@ -139,16 +145,16 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   Expanded(
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: MasonryGridView.builder(
                         gridDelegate:
-                            const SliverSimpleGridDelegateWithFixedCrossAxisCount(
+                            SliverSimpleGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                         ),
                         crossAxisSpacing: 10.0,
                         mainAxisSpacing: 10.0,
                         itemCount: 4,
-                        padding: const EdgeInsets.fromLTRB(
+                        padding: EdgeInsets.fromLTRB(
                           0,
                           16.0,
                           0,
@@ -177,7 +183,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 8.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -227,7 +233,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 8.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -277,7 +283,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 8.0),
                                           child: ClipRRect(
                                             borderRadius:
@@ -327,7 +333,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 8.0),
                                           child: ClipRRect(
                                             borderRadius:
