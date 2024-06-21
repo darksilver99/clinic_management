@@ -354,7 +354,7 @@ class TransitionInfo {
 
   static TransitionInfo appDefault() => TransitionInfo(
         hasTransition: true,
-        transitionType: PageTransitionType.rightToLeft,
+        transitionType: PageTransitionType.fade,
         duration: Duration(milliseconds: 100),
       );
 }
