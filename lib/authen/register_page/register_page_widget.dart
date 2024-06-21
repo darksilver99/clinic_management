@@ -192,6 +192,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -272,6 +275,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -352,6 +358,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -432,6 +441,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -532,6 +544,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -632,6 +647,9 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model

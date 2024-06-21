@@ -179,6 +179,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -278,6 +281,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'Readex Pro',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .info,
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -371,7 +377,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                                         'RegisterPage');
                                                   },
                                                   child: Text(
-                                                    'Regsiter',
+                                                    'Register',
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyMedium
