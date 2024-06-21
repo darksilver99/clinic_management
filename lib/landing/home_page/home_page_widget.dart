@@ -172,8 +172,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     width: double.infinity,
                                     height: 180.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Color(0xCDFFFFFF),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Column(
@@ -222,8 +221,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     width: double.infinity,
                                     height: 240.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Color(0xCDFFFFFF),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Column(
@@ -272,8 +270,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     width: double.infinity,
                                     height: 180.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Color(0xCDFFFFFF),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Column(
@@ -322,8 +319,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     width: double.infinity,
                                     height: 200.0,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .secondaryBackground,
+                                      color: Color(0xCDFFFFFF),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Column(
