@@ -70,7 +70,7 @@ class _NewsListPageWidgetState extends State<NewsListPageWidget> {
                 ),
           ),
           actions: [],
-          centerTitle: false,
+          centerTitle: true,
           elevation: 2.0,
         ),
         body: SafeArea(
