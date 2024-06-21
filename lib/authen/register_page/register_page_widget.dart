@@ -707,6 +707,8 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                                                     _model.textController2.text,
                                                 firstName:
                                                     _model.textController1.text,
+                                                displayName:
+                                                    '${_model.textController1.text} ${_model.textController2.text}',
                                               ));
 
                                           context.goNamedAuth(
