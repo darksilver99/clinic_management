@@ -110,6 +110,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'RegisterPage',
           path: '/registerPage',
           builder: (context, params) => RegisterPageWidget(),
+        ),
+        FFRoute(
+          name: 'NewsListPage',
+          path: '/newsListPage',
+          builder: (context, params) => NewsListPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -347,7 +352,11 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(
+        hasTransition: true,
+        transitionType: PageTransitionType.rightToLeft,
+        duration: Duration(milliseconds: 100),
+      );
 }
 
 class RootPageContext {
