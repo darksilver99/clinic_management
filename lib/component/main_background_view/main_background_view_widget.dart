@@ -1,5 +1,8 @@
+import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'main_background_view_model.dart';
 export 'main_background_view_model.dart';
 
@@ -38,7 +41,7 @@ class _MainBackgroundViewWidgetState extends State<MainBackgroundViewWidget> {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      decoration: const BoxDecoration(),
+      decoration: BoxDecoration(),
       child: Stack(
         children: [
           ClipRRect(
@@ -53,7 +56,7 @@ class _MainBackgroundViewWidgetState extends State<MainBackgroundViewWidget> {
           Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [Color(0x64FCFCFC), Color(0xFF5F4FFF)],
                 stops: [0.0, 1.0],
@@ -65,7 +68,7 @@ class _MainBackgroundViewWidgetState extends State<MainBackgroundViewWidget> {
           Container(
             width: double.infinity,
             height: double.infinity,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               color: Color(0x67000000),
             ),
           ),
