@@ -498,17 +498,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   hoverColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
-                                    context.pushNamed(
-                                      'NewsListPage',
-                                      extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
-                                          hasTransition: true,
-                                          transitionType:
-                                              PageTransitionType.rightToLeft,
-                                          duration: Duration(milliseconds: 100),
-                                        ),
-                                      },
-                                    );
+                                    context.pushNamed('NewsListPage');
                                   },
                                   child: Material(
                                     color: Colors.transparent,
