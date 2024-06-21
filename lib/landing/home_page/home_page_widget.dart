@@ -504,7 +504,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         kTransitionInfoKey: TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
-                                              PageTransitionType.fade,
+                                              PageTransitionType.rightToLeft,
                                           duration: Duration(milliseconds: 100),
                                         ),
                                       },
