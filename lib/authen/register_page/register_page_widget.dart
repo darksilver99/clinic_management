@@ -86,7 +86,7 @@ class _RegisterPageWidgetState extends State<RegisterPageWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0,
                                   valueOrDefault<double>(
-                                    MediaQuery.sizeOf(context).height * 0.3,
+                                    MediaQuery.sizeOf(context).height * 0.1,
                                     0.0,
                                   ),
                                   0.0,
