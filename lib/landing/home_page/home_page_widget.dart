@@ -38,7 +38,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
       'containerOnPageLoadAnimation1': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
-          VisibilityEffect(duration: 1.ms),
           FadeEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
@@ -58,7 +57,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
       'containerOnPageLoadAnimation2': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
-          VisibilityEffect(duration: 1.ms),
           FadeEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
@@ -78,7 +76,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
       'containerOnPageLoadAnimation3': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
-          VisibilityEffect(duration: 1.ms),
           FadeEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
@@ -98,7 +95,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
       'containerOnPageLoadAnimation4': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
-          VisibilityEffect(duration: 1.ms),
           FadeEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
@@ -180,6 +176,39 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 8.0),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/first-aid-kit_14595721.png',
+                                              width: 60.0,
+                                              height: 60.0,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Menu ',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 22.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ).animateOnPageLoad(animationsMap[
                                     'containerOnPageLoadAnimation1']!),
@@ -196,6 +225,39 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(16.0),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 8.0),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/hospital-appointment_16253400.png',
+                                              width: 60.0,
+                                              height: 60.0,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Menu ',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 22.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ).animateOnPageLoad(animationsMap[
@@ -214,6 +276,39 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 8.0),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/money-transaction_7377427.png',
+                                              width: 60.0,
+                                              height: 60.0,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Menu ',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 22.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ).animateOnPageLoad(animationsMap[
                                     'containerOnPageLoadAnimation3']!),
@@ -230,6 +325,39 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
                                       borderRadius: BorderRadius.circular(16.0),
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 8.0),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(8.0),
+                                            child: Image.asset(
+                                              'assets/images/stethoscope_8298789.png',
+                                              width: 60.0,
+                                              height: 60.0,
+                                              fit: BoxFit.cover,
+                                            ),
+                                          ),
+                                        ),
+                                        Text(
+                                          'Menu ',
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                fontSize: 22.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ).animateOnPageLoad(animationsMap[
