@@ -115,6 +115,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'NewsListPage',
           path: '/newsListPage',
           builder: (context, params) => NewsListPageWidget(),
+        ),
+        FFRoute(
+          name: 'NewsDetailPage',
+          path: '/newsDetailPage',
+          builder: (context, params) => NewsDetailPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
